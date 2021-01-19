@@ -1,0 +1,351 @@
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Happy Monkey', cursive;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* ====================
+   Typography
+   ==================== */
+h1 {
+    color: #F34A8E;
+    text-align: center;
+}
+
+h2 {
+    color: #F34A8E;
+}
+
+h3 {
+    color: #EA54CE;
+}
+
+p {
+    color: #FED3E5;
+    padding: 0 3rem;
+}
+
+ul {
+    color: rgb(255, 172, 206);
+    padding: 0 3rem;
+    margin: auto;
+}
+
+/* ====================
+   Layout
+   ==================== */
+.rainbow-bar {
+    padding: 1.5rem;
+    background-image: url(../img/pride-flag.jpg);
+    background-size: cover;
+}
+
+.header {
+    background-image: url(../img/kiss.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.header-layer {
+    background-color: rgba(0, 0, 0, .35);
+    padding: 2rem 1rem 3rem;
+}
+
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav-link {
+    color: rgb(255, 0, 149);
+    text-decoration: none;
+    display: block;
+    margin: 1em .5em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: rgb(187, 0, 90);
+}
+
+@media (min-width: 640px) {
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav-link {
+        padding: 0 .5 em;
+    }
+}
+
+@media (max-width: 640px) {
+    .rainbow-bar li {
+        font-size: 1.2em;
+    }
+    .rainbow-bar {
+        padding: 2rem;
+    }
+}
+
+.header-title {
+    color: #F34A8E;
+    text-transform: uppercase;
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 4px;
+    line-height: 3.5rem;
+}
+
+.header-names {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.header-names-section {
+    padding: 0 1em;
+    color: white;
+}
+
+.header-names-section h2,
+.header-names-section p,
+.header-names-section h3 {
+    color: white;
+}
+
+.subtitle {
+    font-size: 1.3em;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(230, 128, 211);
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+.pictures-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+/* .picture-link {
+    max-width: 45%;
+    max-height: 100vh;
+    display: block;
+} */
+
+.picture {
+    object-fit: cover;
+    max-height: 100vh;
+    width: 100%;
+    border:5px solid rgb(255, 0, 149);
+    border-radius: 15px;
+}
+
+/* .picture:hover,
+.picture:focus,
+.picture-large:hover,
+.picture-large:focus {
+    border: 5px solid rgb(187, 0, 90);
+} */
+
+/* .picture-large-link {
+    max-width: 70vw;
+} */
+
+.picture-large {
+    max-height: 70vh;
+    max-width: 100%;
+    border-radius: 15px;
+    margin: 1.5rem;
+}
+
+/* Section one */
+
+/* .section-one {
+    background-image: url(../img/lollipop.jpg);
+    background-color: rgb(250, 207, 217);
+    padding: 2rem;
+}
+
+.section=one-title {
+    color: rgb(149, 4, 185);
+}
+
+.section-one-subtitle {
+    color: rgb(126, 3, 241);
+    margin-bottom: 2rem;
+}
+
+.section-one p {
+    color: rgb(173, 3, 145);
+    margin-bottom: 2rem;
+    background-color: rgb(250, 207, 217);
+    padding: 1em;
+    font-weight: bold;
+} */
+
+/* mission-section */
+
+.mission {
+    background-image: url(../img/rainbow-background.png);
+    background-size: 100%;
+    background-color: rgb(250, 207, 217);
+    padding: 2rem; 
+}
+
+.mission-header-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.side-picture-container {
+    width: 15%;
+}
+
+.mission-header-text {
+    width: 60%;
+}
+
+.side-picture {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.mission-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.section-side-picture-container {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.section-side-picture {
+    border-radius: 10px;
+    max-height: 60vh;
+    margin: auto;
+    max-width: 100%;
+}
+
+.mission-section-text {
+    width: 45%;
+}
+
+@media (max-width: 795px) {
+    .mission-section {
+        flex-direction: column;
+    }
+    .mission-section-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .side-picture-two {
+        display: none;
+    }
+    .mission-header-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .mission-header-text {
+        width: 100%;
+    }
+}
+
+.mission-section-title {
+    margin-bottom: 2rem;
+    color: rgb(47, 3, 97)
+ }
+
+.mission-section-subtitle {
+    color: #EA54CE;
+    margin-bottom: 2rem;
+}
+
+.mission-p {
+    color:black;
+    font-weight: bold;
+}
+
+/* support section */
+
+.support-section {
+    background-image: url(../img/congruent_outline.png);
+    background-color: rgb(36, 36, 41);
+    padding: 2rem;
+    
+}
+
+.support-section-title {
+    color: #F34A8E;
+    margin-bottom: 2rem;;
+}
+
+.support-info {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+/* contact-us section */
+
+.contact-section {
+    background: url(../img/rainbow-bamboo.jpg);
+    background-color: #FFAEC8;
+    padding: 2rem;
+}
+
+.contact-section-title {
+    color: rgb(126, 3, 241);
+}
+
+.contact-section-subtitle {
+    color: rgb(149, 4, 185);
+}
+
+.contact-section p {
+    color: rgb(106, 0, 138);
+    font-weight: bold;
+}
+
+.btn-email {
+    display: inline-block;
+    background-color: rgb(106, 0, 138);
+    color:  rgb(255, 0, 149);
+    border:5px solid rgb(255, 0, 149);
+    border-radius: 15px;
+    padding: 1rem 2.5rem;
+    margin: 1rem auto;
+    text-decoration: none;
+}
+
+.btn-email:hover,
+.btn-email:focus {
+    background-color: rgb(123, 65, 141);
+    border:5px solid rgb(255, 128, 202);
+    cursor: pointer;
+}
+
+.contact-middle-picture {
+    width: 60%;
+}
